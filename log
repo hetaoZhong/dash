@@ -1,1 +1,8 @@
 http://www.zeptojs.cn/
+
+ssh-keygen -t rsa -C "lifeng.zlf@alibaba-inc.com"
+选择一个文件存储，例如选择github
+cat github.pub公钥
+ssh-agent bash 开启
+ssh-add ~/.ssh/github 把私钥加入id_rsa。
+将github.pub存入github或则gitlab
